@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="font-inter bg-bgdark">
+
+    
+
+    <header id="main-header" class="flex flex-row justify-between items-center w-full sticky top-0 px-6 xl:px-20 py-5 transition-all duration-500 ease-in-out">
+        <h1 class="text-white">Ferdiyanto</h1>
+        <ul class="text-second text-sm font-light hidden xl:flex flex-row gap-4 items-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <button class="xl:hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7H19" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M5 17H19" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </header>
+
+
+
+    <section class="flex flex-col w-full justify-center xl:items-center gap-3 min-h-screen relative overflow-hidden px-6 xl:px-20">
+        <h3 class="text-second font-medium text-lg ">Hello, my name is Ferdiyanto. I am </h3>
+        <h1 class="text-white text-6xl font-semibold">Turning Ideas into Digital Reality</h1>
+    
+        <div class="flex flex-row items-center gap-6 mt-3 text-[13px]">
+            <button class="bg-white rounded-lg px-3 py-2">Get Portfolio</button>
+            <button class="bg-[#202020] border border-white font-medium text-white rounded-lg px-3 py-2">Download CV</button>
+        </div>
+    
+        <!-- Blob container -->
+        <div class="blob-container">
+            <div class="blob"></div>
+        </div>
+    </section>
+    
+
+    <main class="xl:px-20 text-base font-semibold  px-6">
+
+
+
+
+        
+
+
+        <div class="px-6 min-h-screen"></div>
+    </main>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const blobContainer = document.querySelector('.blob-container');
+    
+    for (let i = 0; i < 5; i++) {
+        const blob = document.createElement('div');
+        blob.classList.add('blob');
+        blob.style.animationDelay = `${Math.random() * 5}s`;
+        blob.style.left = `${Math.random() * 100}%`;
+        blob.style.top = `${Math.random() * 100}%`;
+        blobContainer.appendChild(blob);
+    }
+});
+
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 0) {
+                header.classList.add('blur-background');
+            } else {
+                header.classList.remove('blur-background');
+            }
+        });
+    </script>
+
+<script>
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        let scrollTop = window.scrollY;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.classList.remove('slide-down');
+            header.classList.add('slide-up');
+        } else {
+            // Scrolling up
+            header.classList.remove('slide-up');
+            header.classList.add('slide-down');
+        }
+        lastScrollTop = scrollTop;
+
+        if (scrollTop > 0) {
+            header.classList.add('blur-background');
+        } else {
+            header.classList.remove('blur-background');
+        }
+    });
+</script>
+
+
+
+
+
+</body>
+
+</html>
