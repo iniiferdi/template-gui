@@ -6,9 +6,13 @@ module.exports = {
       fontFamily:{
         inter : ["Inter", 'sans-serif']
       },
+      borderRadius: {
+        'one': '16px 32px 8px 32px',
+        'two': '32px 16px 32px 8px;',
+      },
       colors:{
-        'bgdark' : "#0C0C0C",
-        'second' : "#B0B0B0",
+        'primary' : "#08050E",
+        'gradient' : "#FFD952"
       }
     },
   },
