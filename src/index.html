@@ -11,11 +11,13 @@
 
 <body class="font-inter bg-primary mx-6 xl:mx-16">
 
-    
 
-    <header id="main-header" class="flex flex-row justify-between items-center w-full sticky top-0   py-5 transition-all duration-500 ease-in-out">
-        <h1 class="text-white text-base font-semibold">Ferdi<span class="opacity-80 text-[15px] font-normal"> Creative and Inovatife</span></h1>
-        <ul class="text-second text-sm font-light hidden xl:flex flex-row gap-4 items-center">
+
+    <header id="main-header"
+        class="flex flex-row justify-between items-center w-full sticky top-0   pt-6 transition-all duration-500 ease-in-out">
+        <h1 class="text-white text-base font-semibold">Ferdi<span class="text-second text-[15px] font-normal">  Creative
+                and Inovatife</span></h1>
+        <ul id="nav-menu" class="text-second text-sm font-light hidden xl:flex flex-row gap-4 items-center">
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Portofolio</a></li>
@@ -23,64 +25,83 @@
         </ul>
         <button class="xl:hidden">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 7H19" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M5 12H19" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M5 17H19" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>                
+                <path d="M5 7H19" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M5 12H19" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M5 17H19" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
         </button>
     </header>
 
 
-    <div class="flex flex-col xl:flex-row gap-4 justify-center items-center">
-        <div class="relative bg-gradient-to-br min-h-fit from-[#2e2e2e] xl:w-4/5  to-[#0a0a0a] rounded-one p-6 w-full text-white shadow-2xl">
-        
-            
-            <div class="absolute -inset-0.5 bg-gradient-to-br from-[#525252] via-[#0e0e0e] to-[#0a0a0a] rounded-xl blur-lg opacity-70"></div>
-            
-           
-            <div class="relative z-10">
-                
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 rounded-full  flex justify-center items-center">
-                        <img class="w-10 h-10 rounded-full" src="./svg/hero.svg" alt="Profile picture">
+    <div class="flex flex-col xl:flex-row gap-4  mt-8">
+        <div
+            class="relative bg-gradient-to-br min-h-fit from-[#2e2e2e] xl:w-4/5  to-[#0a0a0a] rounded-one p-6 w-full text-white shadow-2xl">
+
+
+            <div
+                class="absolute -inset-0.5 bg-gradient-to-br from-[#525252] via-[#0e0e0e] to-[#0a0a0a] rounded-xl blur-lg opacity-70">
+            </div>
+
+
+            <div class="relative z-10 ">
+
+                <div class="flex flex-col xl:flex-row xl:justify-between gap-4">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full  flex justify-center items-center">
+                            <img class="w-10 h-10 rounded-full" src="./svg/hero.svg" alt="Profile picture">
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="text-sm font-bold">Hi, I'm Ferdi</h2>
+                            <p class="text-[13px] text-gray-400">Creative and Innovative</p>
+                        </div>
                     </div>
-                    <div class="ml-4">
-                        <h2 class="text-sm font-bold">Hi, I'm Ferdi</h2>
-                        <p class="text-[13px] text-gray-400">Creative and Innovative</p>
+    
+    
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./svg/icontw.svg" alt="">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./svg/iconln.svg" alt="">
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <img src="./svg/icongit.svg" alt="">
+                        </a>
                     </div>
                 </div>
-    
-            
-                <div class="flex space-x-4 mb-4">
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="./svg/icontw.svg" alt="">
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="./svg/iconln.svg" alt="">
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <img src="./svg/icongit.svg" alt="">
-                    </a>
+
+
+                <div class="flex flex-col gap-4 mt-4">
+                    <h3 class="xl:text-5xl text-3xl font-medium mb-2 xl:w-4/5">Passionate to pursue technology.</h3>
+
+                    <p class="text-base xl:w-1/2 font-light text-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text.
+                    </p>
                 </div>
-    
-              
-                <h3 class="xl:text-5xl text-3xl font-medium mb-2">Passionate to pursue technology.</h3>
-    
-               
-                <p class="text-base xl:w-1/2 font-light opacity-70">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-                </p>
+
             </div>
         </div>
-    
-        <div class="w-full bg-[#FFD952] xl:w-1/4 flex justify-center items-center rounded-two">
-            <img  src="./svg/herro.svg" alt="">
-                
+
+        <div class="w-full bg-[#FFD952]  xl:w-1/4 flex justify-center items-center rounded-two ">
+
+            <img class="w-full h-full" src="./svg/herro.svg" alt="">
+
         </div>
     </div>
-        
+
 
 
 </body>
 
 </html>
+
+<script>
+    const menuBtn = document.querySelector('button'); // Tombol hamburger
+    const navMenu = document.getElementById('nav-menu'); // Menu navigasi
+
+    menuBtn.addEventListener('click', () => {
+        // Toggle class "hidden" untuk menyembunyikan atau menampilkan menu
+        navMenu.classList.toggle('hidden');
+    });
+</script>
